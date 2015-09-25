@@ -74,7 +74,7 @@
                 app:extendIcon="@mipmap/arrow_right_gray"
                 app:bottomBorderStartFromText="true"
                 />
-             &ltcom.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
+  &ltcom.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
                 android:layout_width="match_parent"
                 android:background="@color/commonDivBgWhite"
                 android:layout_height="62dp"
@@ -87,18 +87,18 @@
                 app:textMargin="10dp"
                 app:extendIcon="@mipmap/arrow_right_gray"
                 />          
-</code><pre/>
+</code></pre>
  
 
  简单吧，时间上就是两个SingleBar叠在一起，然后你指定一下边界框就行了（第一个 SingleBar 的下边框指定和文本对齐，第二个  SingleBar 不设置上边框）。
  
-### )Block Style
+### 3)Block Style
  效果图：<br/>
  <img src="https://github.com/liuguangli/BlockIconTextMenu/blob/master/block_simple.png" /><br/>
 
  代码：
- <pre><code>
- &ltcom.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
+<pre><code>
+   &ltcom.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         app:mainIcon="@mipmap/icon_butler_pressed"
@@ -112,8 +112,8 @@
                         app:mainIconSize="60dp"
                         app:vertical="true"
                         />
-</code><pre/>                       
+</code></pre>                       
 
  这个使用就更简单了，细心的你一定发现了，只需多设置一个属性：app:vertical="true"，从儿实现来图标文本的纵向排列。
  
-### 4) 没有了，下载源码使用吧。:smile:
+### 4) 没有了，下载源码使用吧。
