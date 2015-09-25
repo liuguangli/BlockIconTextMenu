@@ -1,6 +1,6 @@
 # BlockIconTextMenu(自定义带图标文本的块状态、条状菜单)
 ##效果图
-<img src="https://github.com/liuguangli/BlockIconTextMenu/total.png" />
+<img src="https://github.com/liuguangli/BlockIconTextMenu/blob/master/total.png" />
 相信很多移动段开发者都很熟悉了，通常我们熟悉想到的就是使用 RelativeLayout 方式处理，例如：
 <code>
  <RelativeLayout
