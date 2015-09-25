@@ -1,22 +1,22 @@
 # BlockIconTextMenu(自定义带图标文本的块状态、条状菜单)
-##效果图
+## 效果图
 <img src="https://github.com/liuguangli/BlockIconTextMenu/blob/master/total.png" /><br/>
 相信很多移动段开发者都很熟悉了，通常我们熟悉想到的就是使用 RelativeLayout 方式处理，例如：
 <pre><code>
- <RelativeLayout
+ &ltRelativeLayout
         android:layout_width="0dp"
         android:layout_height="fill_parent"
         android:layout_weight="1"
         android:onClick="onClickToMain"
         >
-        <ImageView
+        &ltImageView
             android:layout_width="@dimen/icon_len"
             android:layout_height="@dimen/icon_len"
             android:src="@drawable/selector_icon_main"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
             />
-        <TextView
+        &ltTextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/index"
@@ -26,7 +26,7 @@
             android:textColor="@color/selector_common_icon_text"
             android:textSize="@dimen/common_content_text_small"
             />
-    </RelativeLayout>
+    &lt/RelativeLayout>
 </code></pre>
 我们写一个还好，但时当你定义三个这样的控件时你可能一直在中复杂粘贴的动作，而且你的布局层次会变得复杂而冗长。相信有追求的猿猿都会想到自定义了，于是就出现了这个开源 demo。
 ##简单使用
@@ -36,7 +36,7 @@
 
 代码：
 <pre><code>
-    <com.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
+    &ltcom.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
                 android:layout_width="match_parent"
                 android:background="@color/commonDivBgWhite"
                 android:layout_marginTop="20dp"
@@ -59,7 +59,7 @@
 
 代码：
 <pre><code>
- <com.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
+ &ltcom.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
                 android:layout_width="match_parent"
                 android:background="@color/commonDivBgWhite"
                 android:layout_marginTop="10dp"
@@ -75,7 +75,7 @@
                 app:extendIcon="@mipmap/arrow_right_gray"
                 app:bottomBorderStartFromText="true"
                 />
-            <com.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
+ &ltcom.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
                 android:layout_width="match_parent"
                 android:background="@color/commonDivBgWhite"
                 android:layout_height="62dp"
@@ -97,7 +97,7 @@
  代码：
  <pre>
  <code>
-  <com.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
+  &ltcom.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         app:mainIcon="@mipmap/icon_butler_pressed"
