@@ -74,21 +74,9 @@
                 app:extendIcon="@mipmap/arrow_right_gray"
                 app:bottomBorderStartFromText="true"
                 />
- &ltcom.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
-                android:layout_width="match_parent"
-                android:background="@color/commonDivBgWhite"
-                android:layout_height="62dp"
-                app:mainIcon="@mipmap/icon_home"
-                app:IconMargin="15dp"
-                app:mainIconSize="24dp"
-                app:bottomBorder="0.5dp"
-                app:text="@string/shake_sopen_door"
-                app:textSize="@dimen/common_content_text"
-                app:textMargin="10dp"
-                app:extendIcon="@mipmap/arrow_right_gray"
-                />
-</code><pre/>
-</code><pre/>
+                </code><pre/>
+                <pre><code>
+
  简单吧，时间上就是两个SingleBar叠在一起，然后你指定一下边界框就行了（第一个 SingleBar 的下边框指定和文本对齐，第二个  SingleBar 不设置上边框）。
  
 ### )Block Style
@@ -111,6 +99,21 @@
                         app:mainIconSize="60dp"
                         app:vertical="true"
                         />
- </code></pre>
+ &ltcom.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
+                android:layout_width="match_parent"
+                android:background="@color/commonDivBgWhite"
+                android:layout_height="62dp"
+                app:mainIcon="@mipmap/icon_home"
+                app:IconMargin="15dp"
+                app:mainIconSize="24dp"
+                app:bottomBorder="0.5dp"
+                app:text="@string/shake_sopen_door"
+                app:textSize="@dimen/common_content_text"
+                app:textMargin="10dp"
+                app:extendIcon="@mipmap/arrow_right_gray"
+                />
+</code><pre/>                       
+
  这个使用就更简单了，细心的你一定发现了，只需多设置一个属性：app:vertical="true"，从儿实现来图标文本的纵向排列。
+ 
 ### 4) 没有了，下载源码使用吧。:smile:
