@@ -1,5 +1,5 @@
 # BlockIconTextMenu(自定义带图标文本的块状态、条状菜单)
-## 效果图
+## 效果图<br/>
 <img src="https://github.com/liuguangli/BlockIconTextMenu/blob/master/total.png" /><br/>
 相信很多移动端开发者都很熟悉了，通常我们首先想到的就是使用 RelativeLayout 方式处理，例如：
 <pre><code>
@@ -31,7 +31,7 @@
 我们写一个还好，当你重复写三个以上这样的控件时你可能一直在重复复制粘贴的动作，而且你的布局层次会变得复杂而冗长。相信有追求的猿猿都会想到自定义了，于是就出现了这个开源 demo。
 ## 简单使用
 ### 1)SingleBar Style(根据需要指定右边带尖角)
-效果图：
+效果图：<br/>
 <img src="https://github.com/liuguangli/BlockIconTextMenu/blob/master/bar_single.png" /><br/>
 代码：
 <pre><code>
@@ -53,7 +53,7 @@
 </code></pre>
 这样是不是简洁多了。
 ### 2）BarGroup Style
-效果图：
+效果图：<br/>
 <img src="https://github.com/liuguangli/BlockIconTextMenu/blob/master/bar_group.png" /><br/>
 
 代码：
@@ -89,8 +89,9 @@
                 />
 </code><pre/>
  简单吧，时间上就是两个SingleBar叠在一起，然后你指定一下边界框就行了（第一个 SingleBar 的下边框指定和文本对齐，第二个  SingleBar 不设置上边框）。
-### 3)Block Style
- 效果图：
+ 
+###  3)Block Style
+ 效果图：<br/>
  <img src="https://github.com/liuguangli/BlockIconTextMenu/blob/master/block_simple.png" /><br/>
 
  代码：
