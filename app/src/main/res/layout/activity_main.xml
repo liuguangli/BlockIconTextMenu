@@ -135,7 +135,7 @@
                 app:textMargin="10dp"
                 app:extendIcon="@mipmap/arrow_right_gray"
                 />
-             
+
         </LinearLayout>
 
     </ScrollView>
