@@ -1,0 +1,149 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/commonBg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!--topArea-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/commonTopYellow"
+                android:orientation="vertical"
+                >
+
+
+            </LinearLayout>
+            <!--neck Area-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/commonDivBgWhite"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/butlerMenu"
+                    >
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/commonLineGray"
+                        android:layout_alignParentRight="true"
+                        />
+
+                    <com.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        app:mainIcon="@mipmap/icon_butler_pressed"
+                        app:IconMargin="15dp"
+                        app:topBorder="2dp"
+                        app:text="@string/butler"
+                        app:textSize="@dimen/common_content_text"
+                        app:textColor="@color/common"
+                        app:extendIcon="@mipmap/arrow_right_gray"
+                        app:textMargin="10dp"
+                        app:mainIconSize="60dp"
+                        app:vertical="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/postBagMenu"
+                    >
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/commonLineGray"
+                        android:layout_alignParentRight="true"
+                        />
+
+                    <com.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        app:mainIcon="@mipmap/icon_service"
+                        app:IconMargin="15dp"
+                        app:topBorder="2dp"
+                        app:text="@string/post_bag"
+                        app:textSize="@dimen/common_content_text"
+                        app:textColor="@color/textBlue"
+                        app:textMargin="10dp"
+                        app:mainIconSize="50dp"
+                        app:vertical="true"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <com.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
+                android:layout_width="match_parent"
+                android:background="@color/commonDivBgWhite"
+                android:layout_marginTop="20dp"
+                android:layout_height="62dp"
+                app:mainIcon="@mipmap/icon_mine"
+                app:IconMargin="15dp"
+                app:mainIconSize="24dp"
+                app:topBorder="0.5dp"
+                app:bottomBorder="0.5dp"
+                app:text="@string/butler"
+                app:textSize="@dimen/common_content_text"
+                app:textMargin="10dp"
+                app:extendIcon="@mipmap/arrow_right_gray"
+                />
+
+            <com.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
+                android:layout_width="match_parent"
+                android:background="@color/commonDivBgWhite"
+                android:layout_marginTop="10dp"
+                android:layout_height="62dp"
+                app:mainIcon="@mipmap/icon_service"
+                app:IconMargin="15dp"
+                app:mainIconSize="24dp"
+                app:topBorder="0.5dp"
+                app:bottomBorder="0.5dp"
+                app:text="@string/service"
+                app:textSize="@dimen/common_content_text"
+                app:textMargin="10dp"
+                app:extendIcon="@mipmap/arrow_right_gray"
+                app:bottomBorderStartFromText="true"
+                />
+            <com.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
+                android:layout_width="match_parent"
+                android:background="@color/commonDivBgWhite"
+                android:layout_height="62dp"
+                app:mainIcon="@mipmap/icon_home"
+                app:IconMargin="15dp"
+                app:mainIconSize="24dp"
+                app:bottomBorder="0.5dp"
+                app:text="@string/shake_sopen_door"
+                app:textSize="@dimen/common_content_text"
+                app:textMargin="10dp"
+                app:extendIcon="@mipmap/arrow_right_gray"
+                />
+             
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

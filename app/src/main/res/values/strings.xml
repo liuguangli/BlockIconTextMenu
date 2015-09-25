@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BlockMenuItem</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="butler">管家</string>
+    <string name="service">服务</string>
+    <string name="shake_sopen_door">摇一摇</string>
+    <string name="post_bag">邮包</string>
+</resources>

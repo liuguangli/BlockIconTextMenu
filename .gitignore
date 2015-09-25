@@ -1,0 +1,15 @@
+
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/capture
+*.bak
+build/*
+*/build/*
+.idea/*
+.gradle/*
+local.properties
+lebang-android.properties
+*.iml
+

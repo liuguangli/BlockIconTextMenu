@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="common">#f39800</color>
+    <color name="commonPressed">#f7ca4a</color>
+
+    <color name="commonTextDefault">#393939</color>
+    <color name="commonTextHint">#909090</color>
+
+    <color name="commonTextGray">#909090</color>
+    <color name="commonTopYellow">#ED860A</color>
+    <color name="commonTextWhite">#ffffff</color>
+    <color name="commonLineGray">#E0DDDA</color>
+    <color name="commonTextGreen">#3AE01E</color>
+    <color name="transparent">#00000000</color>
+    
+
+    <color name="loginBtnGreen">#5CCC29</color>
+    <color name="registerBtnOrange">#ED932A</color>
+    <color name="frame_color">#E6E4E1</color>
+
+    <color name="findPwd_bg">#F2F0ED</color>
+
+    <color name="common_textView_hint_Gray">#909090</color>
+
+    <color name="common_black">#000000</color>
+
+    <color name="common_bg_color">#F5F3F0</color>
+
+
+    <color name="commonBg">#F2F0ED</color>
+    <color name="commonDivBgWhite">#faf8f5</color>
+    <color name="commonTextRed">#FF776F</color>
+
+
+
+    <color name="commonDrawingBoardBgColor">#F2F0ED</color>
+    <color name="failExamineBtnRed">#E55045</color>
+    <color name="textBlue">#59AFE7</color>
+
+</resources>

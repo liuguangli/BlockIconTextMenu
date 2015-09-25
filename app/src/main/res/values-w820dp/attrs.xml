@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BlockMenuItem">
+
+        <attr name="mainIcon" format="reference"/>
+        <attr name="extendIcon" format="reference"/>
+        <attr name="text" format="string"/>
+        <attr name="topBorder" format="dimension"/>
+        <attr name="bottomBorder" format="dimension"/>
+        <attr name="borderColor" format="reference|color"/>
+        <attr name="textColor" format="reference"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="IconMargin" format="dimension"/>
+        <attr name="textMargin" format="dimension"/>
+        <attr name="mainIconSize" format="dimension"/>
+        <attr name="extendIconSize" format="dimension"/>
+        <attr name="topBorderStartFromText" format="boolean"/>
+        <attr name="bottomBorderStartFromText" format="boolean"/>
+        <attr name="vertical" format="boolean"/>
+    </declare-styleable>
+</resources>
