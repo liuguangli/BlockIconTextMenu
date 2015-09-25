@@ -58,7 +58,7 @@
 
 代码：
 <pre><code>
- &ltcom.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
+  &ltcom.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
                 android:layout_width="match_parent"
                 android:background="@color/commonDivBgWhite"
                 android:layout_marginTop="10dp"
@@ -74,7 +74,7 @@
                 app:extendIcon="@mipmap/arrow_right_gray"
                 app:bottomBorderStartFromText="true"
                 />
- &ltcom.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
+             &ltcom.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
                 android:layout_width="match_parent"
                 android:background="@color/commonDivBgWhite"
                 android:layout_height="62dp"
@@ -86,7 +86,7 @@
                 app:textSize="@dimen/common_content_text"
                 app:textMargin="10dp"
                 app:extendIcon="@mipmap/arrow_right_gray"
-                />               
+                />          
 </code><pre/>
  
 
