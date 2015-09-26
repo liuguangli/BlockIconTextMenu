@@ -90,7 +90,7 @@
 </code></pre>
  
 
- 简单吧，时间上就是两个SingleBar叠在一起，然后你指定一下边界框就行了（第一个 SingleBar 的下边框指定和文本对齐，第二个  SingleBar 不设置上边框）。
+ 简单吧，实际上就是两个SingleBar叠在一起，然后你指定一下边界框就行了（第一个 SingleBar 的下边框指定和文本对齐，第二个  SingleBar 不设置上边框）。
  
 ### 3)Block Style
  效果图：<br/>
