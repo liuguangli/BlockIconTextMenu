@@ -84,6 +84,7 @@ public class BlockMenuItem extends View {
         mTextPaint.setColor(mTextColor);
         mTextPaint.setTextSize(mTextSize);
         mTextPaint.setAntiAlias(true);
+        mTextPaint.setFilterBitmap(true);
         ta.recycle();
 
     }
