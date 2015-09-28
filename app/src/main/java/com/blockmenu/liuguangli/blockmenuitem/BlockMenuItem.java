@@ -131,6 +131,7 @@ public class BlockMenuItem extends View {
     }
 
     private void showHorizontal(Canvas canvas) {
+        float tempTextMargin = mTextMargin;
         if (mIcon != null){
             Rect src = new Rect();
             src.set(0, 0, mIcon.getWidth(), mIcon.getHeight());
@@ -144,7 +145,7 @@ public class BlockMenuItem extends View {
             dest.right = dest.left + (int)(scale*src.width());
             dest.bottom = dest.top + (int)(scale*src.height());
             canvas.drawBitmap(mIcon,src,dest,mTextPaint);
-            mTextMargin += src.width() + mIconMargin;
+            tempTextMargin += src.width() + mIconMargin;
         }
 
         if (mExtendIcon != null){
@@ -166,18 +167,18 @@ public class BlockMenuItem extends View {
         if (mText != null) {
             Rect rect = new Rect();
             mTextPaint.getTextBounds(mText,0,mText.length(),rect);
-            canvas.drawText(mText, mTextMargin, mHeight/2+rect.height()/4, mTextPaint);
+            canvas.drawText(mText, tempTextMargin, mHeight/2+rect.height()/4, mTextPaint);
         }
 
         if (mTopBorder > 0){
             mBorderPaint.setStrokeWidth(mTopBorder);
-            canvas.drawLine(mTopBorderStartFromText?mTextMargin:0, 0,mWidth, 0, mBorderPaint);
+            canvas.drawLine(mTopBorderStartFromText?tempTextMargin:0, mTopBorder/2,mWidth, mTopBorder/2, mBorderPaint);
 
         }
 
         if (mBottomBorder > 0){
             mBorderPaint.setStrokeWidth(mBottomBorder);
-            canvas.drawLine(mBottomBorderStartFromText?mTextMargin:0,mHeight-mBottomBorder,mWidth,mHeight-mBottomBorder,mBorderPaint);
+            canvas.drawLine(mBottomBorderStartFromText?tempTextMargin:0,mHeight-mBottomBorder/2,mWidth,mHeight-mBottomBorder/2,mBorderPaint);
         }
     }
 
