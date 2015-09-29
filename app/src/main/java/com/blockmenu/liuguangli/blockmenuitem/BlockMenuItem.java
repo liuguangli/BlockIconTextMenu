@@ -194,10 +194,7 @@ public class BlockMenuItem extends View {
             mTextPaint.setColor(mExtendTextColor);
             mTextPaint.setTextSize(mExtendTextSize);
             Rect rect = new Rect();
-            mTextPaint.setColor(DEFAULT_EXTEND_TEXT_COLOR);
-            //基本原理是将字符串中所有的非标准字符（双字节字符）替换成两个标准字符（**，或其他的也可以）
-            //这样就可以直接利用length方法获得字符串的字节长度了.例如，“123abc长城”按字节长度计算是10
-            tempExtendTextMargin+= mExtendText.replaceAll("[^\\x00-\\xff]", "**").length() * mTextSize /2;
+            tempExtendTextMargin += mTextPaint.measureText(mExtendText);
             mTextPaint.getTextBounds(mExtendText, 0, mExtendText.length(), rect);
             canvas.drawText(mExtendText, mWidth-tempExtendTextMargin, mHeight / 2 + rect.height() / 4, mTextPaint);
         }
