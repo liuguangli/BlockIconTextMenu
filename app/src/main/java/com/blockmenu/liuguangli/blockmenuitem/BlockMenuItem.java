@@ -171,7 +171,7 @@ public class BlockMenuItem extends View {
             mExtendIconSize = mExtendIconSize == 0?src.width():mExtendIconSize;
             Rect dest = new Rect();
             int startX = (int)(mWidth- mExtendIcon.getWidth()-mExtendIconMargin);
-            int startY = (int)(mHeight/2- mExtendIconSize/2);
+            int startY = (int)(mHeight/2- src.height()/2);
             float scale = mExtendIconSize/new Float(src.width());
             dest.left = startX;
             dest.top = startY;
