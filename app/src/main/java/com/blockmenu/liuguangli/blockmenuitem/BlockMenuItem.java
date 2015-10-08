@@ -186,17 +186,17 @@ public class BlockMenuItem extends View {
         if (mText != null) {
             mTextPaint.setColor(mTextColor);
             mTextPaint.setTextSize(mTextSize);
-            Rect rect = new Rect();
-            mTextPaint.getTextBounds(mText,0,mText.length(),rect);
-            canvas.drawText(mText, tempTextMargin, mHeight / 2 + rect.height() / 4, mTextPaint);
+            Paint.FontMetricsInt fontMetrics = mTextPaint.getFontMetricsInt();
+            int baseline =  (fontMetrics.top + fontMetrics.bottom  ) / 2 ; //FontMetrics.top,bottom的数值是个负数
+            canvas.drawText(mText, tempTextMargin, mHeight / 2 -baseline, mTextPaint);
         }
         if(mExtendText !=null){
             mTextPaint.setColor(mExtendTextColor);
             mTextPaint.setTextSize(mExtendTextSize);
-            Rect rect = new Rect();
             tempExtendTextMargin += mTextPaint.measureText(mExtendText);
-            mTextPaint.getTextBounds(mExtendText, 0, mExtendText.length(), rect);
-            canvas.drawText(mExtendText, mWidth-tempExtendTextMargin, mHeight / 2 + rect.height() / 4, mTextPaint);
+            Paint.FontMetricsInt fontMetrics = mTextPaint.getFontMetricsInt();
+            int baseline =  (fontMetrics.top + fontMetrics.bottom  ) / 2 ;
+            canvas.drawText(mExtendText, mWidth-tempExtendTextMargin, mHeight / 2 -baseline, mTextPaint);
         }
 
         if (mTopBorder > 0){
