@@ -4,5 +4,20 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
+    <!--通用条状菜单样式-->
+    <style name="commonBarMenu">
+        <item name="android:background">@color/commonDivBgWhite</item>
+        <item name="textSize">@dimen/common_content_text</item>
+        <item name="topBorder">0.5dp</item>
+        <item name="bottomBorder">0.5dp</item>
+        <item name="textMargin">@dimen/common_icon_text_margin</item>
+        <item name="extendIcon">@mipmap/arrow_right_gray</item>
+        <item name="iconMargin">@dimen/common_icon_text_margin</item>
+        <item name="mainIconSize">@dimen/common_text_icon_size</item>
+        <item name="extendTextSize">@dimen/common_content_text</item>
+        <item name="extendIconMargin">@dimen/common_icon_text_margin</item>
+        <item name="extendTextMargin">@dimen/common_icon_text_margin</item>
+    </style>
+
 
 </resources>

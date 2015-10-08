@@ -16,7 +16,7 @@
             <!--topArea-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="50dp"
                 android:background="@color/commonTopYellow"
                 android:orientation="vertical"
                 >
@@ -92,48 +92,39 @@
             </LinearLayout>
             <com.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
                 android:layout_width="match_parent"
-                android:background="@color/commonDivBgWhite"
                 android:layout_marginTop="20dp"
                 android:layout_height="62dp"
                 app:mainIcon="@mipmap/icon_mine"
-                app:iconMargin="15dp"
-                app:mainIconSize="24dp"
-                app:topBorder="0.5dp"
-                app:bottomBorder="0.5dp"
                 app:text="@string/butler"
-                app:textSize="@dimen/common_content_text"
-                app:textMargin="10dp"
-                app:extendIcon="@mipmap/arrow_right_gray"
+                style="@style/commonBarMenu"
                 />
 
             <com.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
                 android:layout_width="match_parent"
-                android:background="@color/commonDivBgWhite"
                 android:layout_marginTop="10dp"
                 android:layout_height="62dp"
                 app:mainIcon="@mipmap/icon_service"
-                app:iconMargin="15dp"
-                app:mainIconSize="24dp"
-                app:topBorder="0.5dp"
-                app:bottomBorder="0.5dp"
                 app:text="@string/service"
-                app:textSize="@dimen/common_content_text"
-                app:textMargin="10dp"
-                app:extendIcon="@mipmap/arrow_right_gray"
                 app:bottomBorderStartFromText="true"
+                style="@style/commonBarMenu"
                 />
             <com.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
                 android:layout_width="match_parent"
-                android:background="@color/commonDivBgWhite"
                 android:layout_height="62dp"
                 app:mainIcon="@mipmap/icon_home"
-                app:iconMargin="15dp"
-                app:mainIconSize="24dp"
-                app:bottomBorder="0.5dp"
+                app:topBorder="0dp"
                 app:text="@string/shake_sopen_door"
-                app:textSize="@dimen/common_content_text"
-                app:textMargin="10dp"
-                app:extendIcon="@mipmap/arrow_right_gray"
+                style="@style/commonBarMenu"
+                />
+
+            <com.blockmenu.liuguangli.blockmenuitem.BlockMenuItem
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="10dp"
+                app:topBorder="0dp"
+                app:text="@string/shake_sopen_door"
+                app:extendText="@string/app_name"
+                style="@style/commonBarMenu"
                 />
 
         </LinearLayout>

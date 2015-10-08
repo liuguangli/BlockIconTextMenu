@@ -3,4 +3,6 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="common_content_text">14sp</dimen>
+    <dimen name="common_icon_text_margin">10dp</dimen>
+    <dimen name="common_text_icon_size">24dp</dimen>
 </resources>
