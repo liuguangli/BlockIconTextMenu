@@ -186,20 +186,17 @@ public class BlockMenuItem extends View {
         if (mText != null) {
             mTextPaint.setColor(mTextColor);
             mTextPaint.setTextSize(mTextSize);
-            Rect rect = new Rect();
-            mTextPaint.getTextBounds(mText,0,mText.length(),rect);
-            canvas.drawText(mText, tempTextMargin, mHeight / 2 + rect.height() / 4, mTextPaint);
+            Paint.FontMetricsInt fontMetrics = mTextPaint.getFontMetricsInt();
+            int baseline =  (fontMetrics.top + fontMetrics.bottom  ) / 2 ; //FontMetrics.top,bottom的数值是个负数
+            canvas.drawText(mText, tempTextMargin, mHeight / 2 -baseline, mTextPaint);
         }
         if(mExtendText !=null){
             mTextPaint.setColor(mExtendTextColor);
             mTextPaint.setTextSize(mExtendTextSize);
-            Rect rect = new Rect();
-            mTextPaint.setColor(DEFAULT_EXTEND_TEXT_COLOR);
-            //基本原理是将字符串中所有的非标准字符（双字节字符）替换成两个标准字符（**，或其他的也可以）
-            //这样就可以直接利用length方法获得字符串的字节长度了.例如，“123abc长城”按字节长度计算是10
-            tempExtendTextMargin+= mExtendText.replaceAll("[^\\x00-\\xff]", "**").length() * mTextSize /2;
-            mTextPaint.getTextBounds(mExtendText, 0, mExtendText.length(), rect);
-            canvas.drawText(mExtendText, mWidth-tempExtendTextMargin, mHeight / 2 + rect.height() / 4, mTextPaint);
+            tempExtendTextMargin += mTextPaint.measureText(mExtendText);
+            Paint.FontMetricsInt fontMetrics = mTextPaint.getFontMetricsInt();
+            int baseline =  (fontMetrics.top + fontMetrics.bottom  ) / 2 ;
+            canvas.drawText(mExtendText, mWidth-tempExtendTextMargin, mHeight / 2 -baseline, mTextPaint);
         }
 
         if (mTopBorder > 0){
