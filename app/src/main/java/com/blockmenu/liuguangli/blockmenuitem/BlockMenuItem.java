@@ -139,6 +139,7 @@ public class BlockMenuItem extends View {
 
         if (mText != null) {
             Rect rect = new Rect();
+            mTextPaint.setTextSize(mTextSize);
             mTextPaint.getTextBounds(mText, 0, mText.length(), rect);
             canvas.drawText(mText, mWidth / 2 - rect.width() / 2, mHeight - mTextMargin - rect.height() / 2, mTextPaint);
         }
